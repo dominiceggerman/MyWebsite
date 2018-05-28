@@ -1,0 +1,28 @@
+/* --------------
+My Website styles
+-------------- */
+
+/* ----------
+Global Styles
+---------- */
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+body {
+	font-family: "Sunflower", sans-serif;
+	background-color: #5f5f63;
+}
+
+/* Image */
+.image-bin {
+	width: 30%;
+	height: auto;
+}
+#profile1 {
+	width: 30%;
+	height: auto;
+	border-radius: 50%;
+}
