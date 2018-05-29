@@ -15,7 +15,7 @@ body {
 	font-family: "Sunflower", sans-serif;
 	background-color: #818181;
 	transition: background-color 1s;
-	transition: margin-left 0.4s;
+	transition: margin-left 0.5s;
 	padding: 3%;
 }
 
@@ -30,7 +30,7 @@ Nav Bar Slide Out
 	left: 0;
 	background-color: #343435;
 	overflow-x: hidden;
-	transition: 0.4s;
+	transition: 0.5s;
 	padding-top: 5%;
 }
 /* Links */
@@ -41,11 +41,32 @@ Nav Bar Slide Out
 	font-size: 1.5em;
 	color: #818181;
 	display: block;
+	position: relative;
 	transition: 0.5s;
 }
 .side a:hover {
 	color: white;
-	text-decoration: underline;
+}
+/* Underline animation */
+.side .link:before {
+	content: "";
+	position: absolute;
+	width: 75%;
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	margin: 5% 10%;
+	background-color: white;
+	visibility: hidden;
+	-webkit-transform: scaleX(0);
+	transform: scaleX(0);
+	-webkit-transition: all 0.2s ease-in-out 0s;
+	transition: all 0.2s ease-in-out 0s;
+}
+.side .link:hover:before {
+	visibility: visible;
+	-webkit-transform: scaleX(1);
+	transform: scaleX(1);
 }
 /* Open and Close buttons */
 nav span {
