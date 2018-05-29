@@ -13,49 +13,55 @@ html {
 }
 body {
 	font-family: "Sunflower", sans-serif;
-	background-color: #5f5f63;
-	padding-top: 5%; 
+	background-color: #818181;
+	transition: background-color 1s;
+	transition: margin-left 0.4s;
+	padding: 3%;
 }
 
-/* -----------------
-Nav Bar and Dropdown
------------------ */
-nav {
-	text-align: center;
-	background: #66d9ff;
-	border-radius: 5%;
+/* --------------
+Nav Bar Slide Out
+-------------- */
+.side {
+	height: 100%;
+	width: 0;
 	position: fixed;
 	top: 0;
 	left: 0;
-	/* sidebar */
-	padding: 1%;
+	background-color: #343435;
+	overflow-x: hidden;
+	transition: 0.4s;
+	padding-top: 5%;
 }
-.drop-btn {
-	background-color: black;
-	color: white;
-	padding: 4%;
-	font-size: 1.2em;
-	border: None;
-	cursor: pointer;
-}
-.drop-btn:hover, .drop-btn:focus {
-	background-color: #5f5f63;
-}
-.drop-content {
-	display: none;
-	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-	z-index: 1;
-}
-.drop-content a {
-	color: white;
-	padding: 1% 1%;
+/* Links */
+.side a {
+	/*padding: 8px 8px 8px 32px;*/
+	padding: 5% 5% 5% 15%;
 	text-decoration: none;
+	font-size: 1.5em;
+	color: #818181;
 	display: block;
+	transition: 0.5s;
 }
-.drop-content a:hover{
+.side a:hover {
+	color: white;
 	text-decoration: underline;
 }
-.show {display:block;}
+/* Open and Close buttons */
+nav span {
+	font-size: 3em;
+	cursor: pointer;
+	position: fixed;
+	left: 3%;
+	top: 0;
+}
+.side .close-btn{
+	position: absolute;
+	top: 0;
+	right: 5%;
+	font-size: 1.5em;
+	margin-left: 15%;
+}
 
 /* --
 Image

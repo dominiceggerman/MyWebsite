@@ -1,18 +1,13 @@
-// When user clicks button, toggle dropdown content
-function drop() {
-	document.getElementById("nav-drop");
+function openNav() {
+	document.getElementById("side-nav").style.width = "20%";
+	document.getElementById("body").style.marginLeft = "20%";
+	// Opacity
+	document.body.style.backgroundColor = "rgba(0, 0, 0, 0.6)";
 }
 
-// Close if user clicks outside of content
-window.onclick = function(event) {
-	if (!event.target.matches(".drop-btn")) {
-
-		var drops = document.getElementByClassName("drop-content");
-		for (var i = 0; i < drops.length; i++) {
-			var openDrop = drops[i];
-			if (openDrop.classList.contains("show")) {
-				openDrop.classList.remove("show");
-			}
-		}
-	}
+function closeNav() {
+	document.getElementById("side-nav").style.width = "0";
+	document.getElementById("body").style.marginLeft = "0";
+	// Opacity
+	document.body.style.backgroundColor = "#818181";
 }

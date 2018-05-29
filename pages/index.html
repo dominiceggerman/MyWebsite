@@ -12,7 +12,7 @@
 	<link rel="stylesheet" type="text/css" href="../static/css/style.css">
 </head>
 
-<body>
+<body id="body">
 
 	<header>
 		<!-- Header Elements -->
@@ -24,8 +24,9 @@
 
 		<!-- Navigation -->
 		<nav>
-			<button onclick="drop()" class="drop-btn">></button>
-			<div id="nav-drop" class="drop-content">
+			<span onclick="openNav()"> &#9776; </span>
+			<div id="side-nav" class="side">
+				<a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
 				<a href="index.html">Home</a>
 				<a href="">About</a>
 				<a href="">Projects</a>
