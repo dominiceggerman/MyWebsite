@@ -18,6 +18,32 @@ body {
 	padding: 3%;
 }
 
+/* -----
+Wrappers
+----- */
+.head-content-wrap {
+	background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.5)), url(../../static/images/profile1.jpg) no-repeat fixed;
+	background-size: cover;
+}
+.content-wrap {
+	width: 99%;
+	margin: 0 auto;
+	padding: 1%;
+	overflow: hidden;
+}
+.flex {
+	display: flex;
+}
+.col-narrow {
+	width: 40%;
+	float: left;
+}
+.col-wide {
+	width: 60%;
+	float: left;
+	padding-left: 3%;
+}
+
 /* --------------
 Nav Bar Slide Out
 -------------- */
@@ -83,9 +109,9 @@ nav span {
 	margin-left: 15%;
 }
 
-/* --
-Image
--- */
+/* ---
+Images
+--- */
 .image-bin {
 	width: 30%;
 	height: auto;
@@ -94,4 +120,14 @@ Image
 	width: 30%;
 	height: auto;
 	border-radius: 50%;
+}
+
+/* --------------
+Background images
+-------------- */
+.chime {
+	background: linear-gradient(rgba(129, 129, 129, 0.8), rgba(129, 129, 129, 0.4)), url(../../static/images/chime.jpg) no-repeat fixed;
+	/*??*/
+	background-position: center;
+	background-size: cover;
 }

@@ -19,15 +19,20 @@
 
 </head>
 
+
 <body id="body">
 
 	<header>
+
 		<!-- Header Elements -->
-		<div class="image-bin"></div>
-			<img src="../static/images/profile1.jpg" id="profile1" alt="Dominic Eggerman">
+		<div class="head-content-wrap">
+			<div>
+				<h1> Dominic Eggerman </h1>
+				<h2> Web Designer and Developer </h2>
+				<p> More content </p>
+				<p> in the box </p>
+			</div>
 		</div>
-		<h1> Dominic Eggerman </h1>
-		<h2> Web Designer and Developer </h2>
 
 		<!-- Navigation -->
 		<nav>
@@ -35,19 +40,35 @@
 			<div id="side-nav" class="side">
 				<a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
 				<a class="link" href="index.html">Home</a>
-				<a class="link"href="">About</a>
+				<a class="link" href="">About</a>
 				<a class="link" href="">Projects</a>
+				<a class="link" href="astro.html">Astronomy</a>
 				<a class="link" href="CV.html">CV</a>
 				<a class="link" href="">Contact</a>
 			</div>
 		</nav>
+
 	</header>
 
-	<main>
-		<p>Display main</p>
+
+	<main role="main">
+		<section class="content-wrap">
+			<!-- Section title -->
+			<div class="content-wrap flex">
+				<h2> About Dominic </h2>
+			</div>
+			<!-- Section content -->
+			<div class="content-wrap flex">
+				<p>
+					I am a recent graduate from Yale University with a Bachelor of Science in Astrophysics.  At Yale, I conducted various <a class="text-link" href="astro.html"> research projects </a> to study black holes, exoplanets, and dark energy.  I hail from England where I used to live and would often visit family in France.  I moved to the United States (CT) in 2010 where I started high school.  I now live in Houston, TX.
+				</p>
+			</div>
+		</section>
 	</main>
 
+
 	<footer>
+
 		<div class="designer">
             Designed by Dominic Eggerman
         </div>
@@ -59,6 +80,7 @@
             <!-- GitHub -->
             <a href="https://github.com/dominiceggerman" target="_blank"><i title="GitHub icon" aria-hidden="true" id="GitHub" class="fab fa-github-square" role="img"></i><span class="sr-only">GitHub</span></a>
         </div>
+
 	</footer>
 
 </body>
