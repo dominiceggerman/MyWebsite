@@ -123,10 +123,9 @@ nav span {
 /* -------------
 Curriculum Vitae
 ------------- */
-.cv-section h1 {
-	border: 2px solid red;
-	display: inline-block;
-	width: 80%;
+.cv-section {
+	text-align: center;
+	margin: 3% 1%; 
 }
 
 /* ------
@@ -134,20 +133,22 @@ Drop tabs
 ------ */
 .drop-btn {
 	background-color: #818181;
-	padding: 1% 2%;
-	font-size: 2em;
-	border: none;
-	cursor: pointer;
-}
-.drop-btn:hover, .drop-btn:focus {
-	background-color: rgba(0, 0, 0, 0.1);
-	border-radius: 15%;
-	transition: 0.4s;
+    padding: 2%;
+    font-size: 1.75em;
+    border: none;
+    cursor: pointer;
 }
 .dropdown {
-	float: right;
-	position: relative;
-	display: inline-block;
+	border: 2px dotted black;
+}
+.drop-content {
+	text-align: left;
+    display: none;
+    overflow: auto;
+    z-index: 1;
+}
+.show {
+	display: block;
 }
 
 /* ---

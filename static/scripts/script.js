@@ -20,12 +20,14 @@ function closeNav() {
 
 // Dropdown tabs
 
+// Show tab
 function dropTab() {
-	document.getElementById("tab-drop").classList.toggle("show");
+	document.getElementById("drop-tab").classList.toggle("show");
 }
-
-window.onclick = function(event) {
+// Close the dropdown if the user clicks outside of it
+window.onclick = function (event) {
 	if (!event.target.matches('.drop-btn')) {
+
 		var dropdowns = document.getElementsByClassName("drop-content");
 		var i;
 		for (i = 0; i < dropdowns.length; i++) {
