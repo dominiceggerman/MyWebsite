@@ -18,6 +18,7 @@ body {
 	padding: 3%;
 }
 header, footer {
+	width: 100%;
 	text-align: center;
 }
 h1, h2, h3, h4, h5, h6 {
@@ -26,6 +27,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 p {
 	padding: 0 3% 1% 3%;
+	margin-top: 1%;
 	margin-bottom: 0;
 }
 
@@ -33,7 +35,7 @@ p {
 Wrappers
 ----- */
 .content-wrap {
-	width: 99%;
+	width: 100%;
 	margin: 0 auto;
 	padding: 1%;
 	overflow: hidden;
@@ -116,6 +118,36 @@ nav span {
 	right: 5%;
 	font-size: 2em;
 	margin-left: 15%;
+}
+
+/* -------------
+Curriculum Vitae
+------------- */
+.cv-section h1 {
+	border: 2px solid red;
+	display: inline-block;
+	width: 80%;
+}
+
+/* ------
+Drop tabs
+------ */
+.drop-btn {
+	background-color: #818181;
+	padding: 1% 2%;
+	font-size: 2em;
+	border: none;
+	cursor: pointer;
+}
+.drop-btn:hover, .drop-btn:focus {
+	background-color: rgba(0, 0, 0, 0.1);
+	border-radius: 15%;
+	transition: 0.4s;
+}
+.dropdown {
+	float: right;
+	position: relative;
+	display: inline-block;
 }
 
 /* ---

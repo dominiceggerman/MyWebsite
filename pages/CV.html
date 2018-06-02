@@ -21,8 +21,14 @@
 
 <body id="body">
 
-	<header>
+	<header role="banner">
+
 		<!-- Header Elements -->
+		<section>
+			<div class="content-wrap">
+				<h1> Dominic Eggerman Curriculum Vitae </h1>
+			</div>
+		</section>
 
 		<!-- Navigation -->
 		<nav>
@@ -37,83 +43,42 @@
 				<a class="link" href="">Contact</a>
 			</div>
 		</nav>
+
 	</header>
 
-	<main>
-		<!-- Top section -->
-		<h1> Dominic Eggerman </h1>
-		<div class="head-cont">
-			<div class="head-item">
-				Houston, TX
-			</div>
-			<div class="head-item">
-				dominiceggerman@gmail.com
-			</div>
-			<div class="head-item">
-				<a href="www.linkedin.com/in/dominiceggerman/">LinkedIn</a>
-			</div>
-		</div>
+	<main role="main">
 
 		<!-- Education -->
+		<section class="cv-section">
+			<h2> Education </h2>
+			<div class="dropdown">
+				<button onlick="dropTab()" class="drop-btn">+</button>
+					<div id="tab-drop" class="drop-content">
+						<h3> Yale University </h3>
+						<h3> Hamden Hall Country Day School </h3>
+					</div>
+				</button>
+			</div>
+		</section>
 
 		<!-- Professional Experience -->
 
 		<!-- Programming Experience and Technical Summary -->
-		<section class="cv-section">
-			<div class="content-wrap">
-
-				<h3>Programming Experience and Technical Summary</h3>
-
-				<div class="coding-items">
-					<ul>
-						<li>Python</li>
-						<li>Java</li>
-						<li>C++</li>
-						<li>SQL</li>
-						<li>HTML</li>
-						<li>CSS</li>
-						<li>JavaScript</li>
-						<li>GIT</li>
-						<li>Bash Scripting</li>
-					</ul>
-				</div>
-				
-			</div>
-		</section>
 
 		<!-- Projects -->
 			<!-- Programming -->
-			<!-- Research at Yale -->
 		<!-- Publications -->
 
 		<!-- Awards -->
 
 		<!-- Personal Interests -->
-		<section class="cv-section">
-			<div class="content-wrap">
-
-				<div class="content-item">
-					<h3>Music Technology</h3>
-					<ul>
-						<li>Self taught professional DJ and music producer</li>
-						<li>Experience with digital audio workstations, MIDI controllers, audio mixing, and laser lighting systems</li>
-					</ul>
-				</div>
-
-				<div class="content-item">
-					<h3>Soccer</h3>
-					<p>I enjoy playing soccer often</p>
-				</div>
-
-			</div>
-		</section>
+		
 
 		<!-- Other Information -->
 
 	</main>
 
 	<footer>
-		<script type="text/javascript" src="../static/scripts/script.js"></script>
 	</footer>
 
 </body>
