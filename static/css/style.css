@@ -140,11 +140,22 @@ Drop tabs
 Images
 --- */
 
+/* ------
+Astronomy
+------ */
+#modal-noise-paper {
+	/* display: table-cell; ?? */
+	/* vertical-align: middle; */
+	font-size: 2em;
+	color: #343435;
+	margin: 2%;
+}
+
 /* --------------
 Background images
 -------------- */
 .back-image {
-	height: 80vh;
+	min-height: 80vh;
 	background: center no-repeat fixed;
 	background-size: cover; 
 	margin: 5% 0;
@@ -160,27 +171,4 @@ Background images
 }
 .argos {
 	background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.3)), url(../../static/images/argos.jpg);
-}
-
-/* --
-Media
--- */
-@media (min-width: 800px) {
-	
-	/* Wrappers */
-	.flex {
-		display: flex;
-	}
-	.col-narrow {
-		width: 40%;
-		float: left;
-	}
-	.col-narrow h2, .col-narrow h3, .col-narrow h4 {
-		text-align: center;
-	}
-	.col-wide {
-		width: 60%;
-		float: left;
-		padding-left: 3%;
-	}
 }

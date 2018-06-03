@@ -1,0 +1,24 @@
+/* -------------------
+My Website 800px media
+------------------- */
+
+@media (min-width: 800px) {
+
+	/* Wrappers */
+	.flex {
+		display: flex;
+	}
+	.col-narrow {
+		width: 40%;
+		float: left;
+	}
+	.col-narrow h2, .col-narrow h3, .col-narrow h4 {
+		text-align: center;
+	}
+	.col-wide {
+		width: 60%;
+		float: left;
+		padding-left: 3%;
+	}
+	
+}
