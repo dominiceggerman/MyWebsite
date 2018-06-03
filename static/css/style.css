@@ -18,8 +18,19 @@ body {
 	padding: 3%;
 }
 header, footer {
+	/* For non-supporters of radial gradients */
+	background: #818181;
+	/* Radial grad (just gradients wings since footer is a rectangle) */
+	background: radial-gradient(circle, #605f5f, #818181);
 	width: 100%;
 	text-align: center;
+}
+footer {
+	/* For non-supporters of radial gradients */
+	background: #818181;
+	/* Radial grad (just gradients wings since footer is a rectangle) */
+	background: radial-gradient(circle, #605f5f, #818181);
+	padding: 3%;
 }
 h1, h2, h3, h4, h5, h6 {
 	margin: 1%;
