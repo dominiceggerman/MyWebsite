@@ -10,7 +10,6 @@ function openNav() {
 	// Opacity
 	document.body.style.backgroundColor = "rgba(0, 0, 0, 0.6)";
 }
-
 function closeNav() {
 	document.getElementById("side-nav").style.width = "0";
 	document.getElementById("body").style.marginLeft = "0";
@@ -18,25 +17,24 @@ function closeNav() {
 	document.body.style.backgroundColor = "#818181";
 }
 
-// Dropdown tabs
 
-// Show tab
-function dropTab() {
-	document.getElementById("drop-tab").classList.toggle("show");
-}
-// Close the dropdown if the user clicks outside of it
-window.onclick = function (event) {
-	if (!event.target.matches('.drop-btn')) {
-		var dropdowns = document.getElementsByClassName("drop-content");
-		var i;
-		for (i = 0; i < dropdowns.length; i++) {
-			var openDropdown = dropdowns[i];
-			if (openDropdown.classList.contains('show')) {
-				openDropdown.classList.remove('show');
+// CV tabs
+function openTab() {
+	var pantab = document.getElementsByClassName("panel-tab");
+	var j;
+	for (j = 0; j < pantab.length; j++) {
+		pantab[j].addEventListener("click", function() {
+			this.classList.toggle("active");
+			var panel = this.nextElementSibling;
+			if (panel.style.maxHeight){
+				panel.style.maxHeight = null;
+			} else {
+				panel.style.maxHeight = panel.scrollHeight + "px";
 			}
-		}
+		});
 	}
 }
+
 
 // Project tabs
 

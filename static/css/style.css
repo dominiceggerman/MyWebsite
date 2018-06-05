@@ -131,7 +131,6 @@ Contact
 /* -----
 Projects
 ----- */
-
 /* Tabs */
 .tab-link {
 	background-color: #39393a;
@@ -160,25 +159,38 @@ Curriculum Vitae
 	text-align: center;
 	margin: 3% 1%; 
 }
-/* Drop tabs */
-.drop-btn {
-	background-color: #818181;
-    padding: 2%;
-    font-size: 1.75em;
-    border: none;
+/* Drop panels */
+.panel-tab {
+    background-color: #eee;
+    color: #444;
     cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
 }
-.dropdown {
-	border: 2px dotted black;
+.active, .panel-tab:hover {
+    background-color: #ccc;
 }
-.drop-content {
-	text-align: left;
-    display: none;
-    overflow: auto;
-    z-index: 1;
+.panel-tab:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
 }
-.show {
-	display: block;
+.active:after {
+    content: "\2212";
+}
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
 }
 
 /* ------

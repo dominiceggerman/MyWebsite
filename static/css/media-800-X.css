@@ -4,7 +4,9 @@ My Website 800px media
 
 @media (min-width: 800px) {
 
-	/* Wrappers */
+	/* -----
+	Wrappers
+	----- */
 	.flex {
 		display: flex;
 	}
@@ -20,5 +22,5 @@ My Website 800px media
 		float: left;
 		padding-left: 3%;
 	}
-	
+
 }
