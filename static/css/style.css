@@ -52,6 +52,14 @@ Wrappers
 	padding: 1%;
 	overflow: hidden;
 }
+.grid-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 0;
+}
+.grid-item {
+	border: 1px solid black;
+}
 
 /* --------------
 Nav Bar Slide Out
