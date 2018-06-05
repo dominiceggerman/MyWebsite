@@ -58,41 +58,103 @@
 
 			<!-- About -->
 			<div id="about" class="tab-content">
-				<p> I enjoy coding and working with technology to create things. </p>
+				<p> I enjoy coding and working with technology to create things.
+				The source code for most of my projects is avaliable on <a
+				class="text-link"
+				href="https://github.com/dominiceggerman">Github</a>.</p>
 			</div>
 
 			<!-- Websites -->
 			<div id="websites" class="tab-content">
 				<!-- The grid container -->
 				<div class="grid-container">
+
 					<!-- An item in the grid -->
 					<div class="grid-item">
-						<img src="../static/images/nasa-89125-unsplash.jpg">
-						<h5> My Website </h5>
+						<!-- Make grid item a card to turn over -->
+						<div class=card-container onclick="flipTile(0)">
+							<!-- Front -->
+							<div class="side">
+								<img src="../static/images/nasa-89125-unsplash.jpg">
+								<h5> My Website </h5>
+							</div>
+							<!-- Back -->
+							<div class="side back">
+								<p> I designed this website using my own HTML, CSS, and JavaScript </p>
+							</div>
+						</div>
 					</div>
 
+					<!-- An item in the grid -->
 					<div class="grid-item">
-						<img src="../static/images/nasa-89125-unsplash.jpg">
-						<h5> Website of Jeffrey Kenney </h5>
+						<!-- Make grid item a card to turn over -->
+						<div class=card-container onclick="flipTile(1)">
+							<!-- Front -->
+							<div class="side">
+								<img src="../static/images/nasa-89125-unsplash.jpg">
+								<h5> Jeffrey Kenney's Website </h5>
+							</div>
+							<!-- Back -->
+							<div class="side back">
+								<h5> Jeffrey Kenney's Website </h5>
+							</div>
+						</div>
 					</div>
 
+					<!-- An item in the grid -->
 					<div class="grid-item">
-						<img src="../static/images/nasa-89125-unsplash.jpg">
-						<h5> Website of Mary Edgington </h5>
+						<!-- Make grid item a card to turn over -->
+						<div class=card-container onclick="flipTile(2)">
+							<!-- Front -->
+							<div class="side">
+								<img src="../static/images/nasa-89125-unsplash.jpg">
+								<h5> Ryan Petersburg's Website </h5>
+							</div>
+							<!-- Back -->
+							<div class="side back">
+								<h5> Ryan Petersburg's Website </h5>
+							</div>
+						</div>
 					</div>
 
 					<div class="grid-item">
 						<img src="../static/images/nasa-89125-unsplash.jpg">
 						<h5> Website of Catherine Panter-Brick </h5>
 					</div>
-				</div>
-				
 
+				</div>
 			</div>
 
 			<!-- Web Applications -->
 			<div id="webapps" class="tab-content">
-				<p> I also design web applications. </p>
+				<!-- The grid container -->
+				<div class="grid-container">
+
+					<!-- An item in the grid -->
+					<div class="grid-item">
+						<!-- Make grid item a card to turn over -->
+						<div class=card-container onclick="flipTile(3)">
+							<!-- Front -->
+							<div class="side">
+								<img src="../static/images/SunScan-logo.png">
+								<h5> SunScan </h5>
+							</div>
+							<!-- Back -->
+							<div class="side back">
+								<p> SunScan is a Python web application
+								developed in Django that uses the OpenWeatherMap
+								and Google Maps API to give the weather in
+								cities around the world </p>
+							</div>
+						</div>
+					</div>
+
+					<div class="grid-item">
+						<img src="../static/images/nasa-89125-unsplash.jpg">
+						<h5> Website of Catherine Panter-Brick </h5>
+					</div>
+
+				</div>
 			</div>
 
 			<!-- Other Projects -->
