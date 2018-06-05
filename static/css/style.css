@@ -128,6 +128,31 @@ Contact
 	/* ?? */
 }
 
+/* -----
+Projects
+----- */
+
+/* Tabs */
+.tab-link {
+	background-color: #39393a;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 2%;
+	font-size: 1.5em;
+	width: 25%;
+}
+.tab-link:hover {
+	background-color: #818181;
+	border: 2px solid #39393a;
+}
+.tab-content {
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+}
+
 /* -------------
 Curriculum Vitae
 ------------- */
@@ -135,10 +160,7 @@ Curriculum Vitae
 	text-align: center;
 	margin: 3% 1%; 
 }
-
-/* ------
-Drop tabs
------- */
+/* Drop tabs */
 .drop-btn {
 	background-color: #818181;
     padding: 2%;
@@ -158,10 +180,6 @@ Drop tabs
 .show {
 	display: block;
 }
-
-/* ---
-Images
---- */
 
 /* ------
 Astronomy

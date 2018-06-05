@@ -35,7 +35,7 @@
 				onclick="closeNav()">&times;</a>
 				<a class="link" href="index.html">Home</a>
 				<a class="link" href="#about">About</a>
-				<a class="link" href="">Projects</a>
+				<a class="link" href="projects.html">Projects</a>
 				<a class="link" href="astro.html">Astronomy</a>
 				<a class="link" href="CV.html">CV</a>
 				<a class="link" href="">Contact</a>
@@ -48,24 +48,35 @@
 	<main role="main">
 
 		<!-- Projects -->
-		<div class="project-tabs">
+		<section class="project-tabs">
+
+			<!-- Project access buttons -->
+			<button class="tab-link" onclick="openPage('about')">About</button>
+			<button class="tab-link" onclick="openPage('websites')">Websites</button>
+			<button class="tab-link" onclick="openPage('webapps')">Web Applications</button>
+			<button class="tab-link" onclick="openPage('otherprojects')">Other Projects</button>
+
+			<!-- About -->
+			<div id="about" class="tab-content">
+				<p> I enjoy coding and working with technology to create things. </p>
+			</div>
 
 			<!-- Websites -->
-			<section class="websites">
-				
-			</section>
+			<div id="websites" class="tab-content">
+				<p> I enjoy designing websites for people.  Check them out: </p>
+			</div>
 
-			<!-- Web Apps -->
-			<section class="web-apps">
-				
-			</section>
+			<!-- Web Applications -->
+			<div id="webapps" class="tab-content">
+				<p> I also design web applications. </p>
+			</div>
 
 			<!-- Other Projects -->
-			<section class="small-projects">
-				
-			</section>
-			
-		</div>
+			<div id="otherprojects" class="tab-content">
+				<p> Some other minor projects I have worked on. </p>
+			</div>
+
+		</section>
 
 	</main>
 
