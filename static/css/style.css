@@ -55,10 +55,15 @@ Wrappers
 .grid-container {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-gap: 0;
+	grid-gap: 20px;
 }
 .grid-item {
-	border: 1px solid black;
+	text-align: center;
+}
+.grid-item img {
+	width: 100%;
+	height: auto;
+	border-radius: 15%;
 }
 
 /* --------------
@@ -159,6 +164,7 @@ Projects
     padding: 100px 20px;
     height: 100%;
 }
+/* Project Tiles */
 
 /* -------------
 Curriculum Vitae
