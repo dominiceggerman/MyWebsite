@@ -30,6 +30,7 @@ footer {
 	background: #818181;
 	/* Radial grad (just gradients wings since footer is a rectangle) */
 	background: radial-gradient(circle, #605f5f, #818181);
+	margin-top: 5%;
 	padding: 3%;
 	text-align: center;
 }
@@ -43,9 +44,9 @@ p {
 	margin-bottom: 0;
 }
 
-/* -----
-Wrappers
------ */
+/* -------------
+General Wrappers
+------------- */
 .content-wrap {
 	width: 100%;
 	margin: 0 auto;
@@ -233,6 +234,12 @@ Curriculum Vitae
 /* ------
 Astronomy
 ------ */
+/* Back drop to sections */
+.back-drop {
+	padding: 1%;
+	background: linear-gradient(#818181, #605f5f, #818181);
+}
+/* Publications */
 #modal-noise-paper {
 	/* display: table-cell; ?? */
 	/* vertical-align: middle; */
