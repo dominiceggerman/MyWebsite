@@ -22,28 +22,6 @@ function closeNav() {
 }
 
 
-// Project tabs
-function openPage(pageName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tab-content");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tab-link");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].style.backgroundColor = "";
-    }
-    document.getElementById(pageName).style.display = "block";
-}
-// Project tiles (flip)
-function flipTile(tilenum) {
-	// Get all of the pannel tabs
-	var tile = document.getElementsByClassName("card-container");
-	// For the specific panel, toggle flipped class
-	tile[tilenum].classList.toggle("flipped")
-}
-
-
 // CV tabs
 function toggleAll() {
 	// Get all pannels

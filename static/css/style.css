@@ -177,52 +177,30 @@ Homepage
 /* -----
 Projects
 ----- */
-/* Tabs */
-.tab-link {
-	background-color: #39393a;
-	float: left;
-	border: none;
-	outline: none;
-	cursor: pointer;
-	padding: 2%;
-	font-size: 1.5em;
-	width: 25%;
+.port-item {
+    position: relative;
 }
-.tab-link:hover {
-	background-color: #818181;
-	border: 2px solid #39393a;
+.port-item img {
+  opacity: 1;
+  width: 100%;
+  height: auto;
+  transition: .5s ease-in;
+  backface-visibility: hidden;
 }
-.tab-content {
-    display: none;
-    padding: 100px 20px;
-	height: 100%;
+.port-text {
+  transition: .5s ease-in;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
-/* Project Tiles / Cards */
-.card-container {
-	height: 100%;
-	width: 100%;
-	cursor: pointer;
-	perspective: 500;
-	transform-style: preserve-3d;
-	transition: all 0.5s ease-in-out;
+.port-item:hover img {
+  opacity: 0.3;
 }
-.card-container .side {
-	background-color: #818181;
-	backface-visibility: hidden;
-	overflow: hidden;
-	height: 100%;
-	width: 100%;
-}
-.card-container .back {
-	border: 2px solid #39393a;
-	border-radius: 15%;
-	-webkit-transform: rotateY(180deg);
-	transform: rotateY(180deg);
-}
-/* Applied on click */
-.flipped {
-	-webkit-transform: rotateY(180deg);
-	transform: rotateY(180deg);
+.port-item:hover .port-text {
+  opacity: 1;
 }
 
 /* -------------
