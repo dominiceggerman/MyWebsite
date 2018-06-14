@@ -45,6 +45,14 @@ function flipTile(tilenum) {
 
 
 // CV tabs
+function toggleAll() {
+	// Get all pannels
+	var alltabs = document.getElementsByClassName("panel-tab");
+	for (var i = 0; i < alltabs.length; i++) {
+		// Use toggleTab for every number in alltabs range
+		toggleTab(i);
+	}
+}
 function toggleTab(tabnum) {
 	// Get all of the pannel tabs
 	var pantab = document.getElementsByClassName("panel-tab");

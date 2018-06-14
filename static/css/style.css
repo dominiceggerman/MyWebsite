@@ -198,6 +198,15 @@ Projects
 Curriculum Vitae
 ------------- */
 /* Drop panels */
+#all-open {
+	/* ?? */
+	float: right;
+	background-color: #eee;
+    color: #444;
+    cursor: pointer;
+	padding: 10px;
+	outline: none;
+}
 .panel-tab {
     background-color: #eee;
     color: #444;
